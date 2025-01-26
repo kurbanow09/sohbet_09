@@ -1,10 +1,8 @@
 hasap = 0
 
-# Get the user's username and password
 username = input("Username: ")
 password = input("password: ")
 
-# Check if the username and password are correct
 if username == "sohbet":
     if password == "12345678":
         print("hos geldiniz")
