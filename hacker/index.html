@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeMatrix | HTML/CSS Öğren</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="matrix-bg"></div>
+    
+    <header class="glow">
+        <div class="logo">
+            <span class="code">{</span>CodeMatrix<span class="code">}</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#html" class="nav-link"><i class="fas fa-code"></i> HTML</a></li>
+                <li><a href="#css" class="nav-link"><i class="fab fa-css3-alt"></i> CSS</a></li>
+                <li><a href="#layout" class="nav-link"><i class="fas fa-layer-group"></i> Layout</a></li>
+                <li><a href="#responsive" class="nav-link"><i class="fas fa-mobile-alt"></i> Responsive</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <main>
+        <section id="html" class="card glow">
+            <h2><span class="tag">&lt;</span>HTML<span class="tag">&gt;</span></h2>
+            <div class="content">
+                <div class="code-block">
+                    <div class="terminal-bar">
+                        <div class="terminal-btn red"></div>
+                        <div class="terminal-btn yellow"></div>
+                        <div class="terminal-btn green"></div>
+                        <span class="terminal-title">basic-structure.html</span>
+                    </div>
+                    <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="tr"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Belge Başlığı&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Başlık&lt;/h1&gt;
+    &lt;p&gt;Paragraf metni&lt;/p&gt;
+    &lt;a href="#"&gt;Link&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </div>
+
+                <div class="html-elements">
+                    <h3 class="subtitle"><i class="fas fa-tags"></i> Temel Elementler</h3>
+                    <div class="elements-grid">
+                        <div class="element-card">
+                            <span class="tag">&lt;div&gt;</span>
+                            <p>Blok seviyesi container</p>
+                        </div>
+                        <div class="element-card">
+                            <span class="tag">&lt;span&gt;</span>
+                            <p>Inline container</p>
+                        </div>
+                        <div class="element-card">
+                            <span class="tag">&lt;p&gt;</span>
+                            <p>Paragraf</p>
+                        </div>
+                        <div class="element-card">
+                            <span class="tag">&lt;a&gt;</span>
+                            <p>Link</p>
+                        </div>
+                        <div class="element-card">
+                            <span class="tag">&lt;img&gt;</span>
+                            <p>Resim</p>
+                        </div>
+                        <div class="element-card">
+                            <span class="tag">&lt;ul&gt;/&lt;li&gt;</span>
+                            <p>Sırasız liste</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="css" class="card glow">
+            <h2><span class="bracket">{</span>CSS<span class="bracket">}</span></h2>
+            <div class="content">
+                <div class="code-block">
+                    <div class="terminal-bar">
+                        <div class="terminal-btn red"></div>
+                        <div class="terminal-btn yellow"></div>
+                        <div class="terminal-btn green"></div>
+                        <span class="terminal-title">styles.css</span>
+                    </div>
+                    <pre><code class="language-css">/* Element seçici */
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #0d0d0d;
+    color: #00ff41;
+}
+
+/* Class seçici */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* ID seçici */
+#header {
+    font-size: 2rem;
+    text-shadow: 0 0 10px #00ff41;
+}
+
+/* Pseudo-class */
+a:hover {
+    color: #00ff41;
+    text-decoration: underline;
+}</code></pre>
+                </div>
+
+                <div class="css-properties">
+                    <h3 class="subtitle"><i class="fas fa-paint-brush"></i> Önemli Özellikler</h3>
+                    <div class="properties-grid">
+                        <div class="property-card">
+                            <h4>Display</h4>
+                            <ul>
+                                <li>block</li>
+                                <li>inline</li>
+                                <li>flex</li>
+                                <li>grid</li>
+                            </ul>
+                        </div>
+                        <div class="property-card">
+                            <h4>Position</h4>
+                            <ul>
+                                <li>static</li>
+                                <li>relative</li>
+                                <li>absolute</li>
+                                <li>fixed</li>
+                            </ul>
+                        </div>
+                        <div class="property-card">
+                            <h4>Flexbox</h4>
+                            <ul>
+                                <li>flex-direction</li>
+                                <li>justify-content</li>
+                                <li>align-items</li>
+                                <li>flex-wrap</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="layout" class="card glow">
+            <h2><i class="fas fa-th"></i> Layout Sistemleri</h2>
+            <div class="content">
+                <div class="layout-examples">
+                    <div class="example">
+                        <h3 class="subtitle"><span class="bracket">{</span>Flexbox<span class="bracket">}</span></h3>
+                        <div class="flex-container">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                        </div>
+                        <pre><code class="language-css">.flex-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.flex-item {
+    flex: 1;
+}</code></pre>
+                    </div>
+
+                    <div class="example">
+                        <h3 class="subtitle"><span class="bracket">{</span>CSS Grid<span class="bracket">}</span></h3>
+                        <div class="grid-container">
+                            <div class="grid-item header">Header</div>
+                            <div class="grid-item sidebar">Sidebar</div>
+                            <div class="grid-item content">Content</div>
+                            <div class="grid-item footer">Footer</div>
+                        </div>
+                        <pre><code class="language-css">.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar content"
+        "footer footer";
+    gap: 1rem;
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="responsive" class="card glow">
+            <h2><i class="fas fa-mobile-alt"></i> Responsive Tasarım</h2>
+            <div class="content">
+                <div class="media-query">
+                    <h3 class="subtitle"><span class="tag">@media</span> Sorguları</h3>
+                    <pre><code class="language-css">/* Mobil cihazlar */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+    }
+    
+    .content {
+        font-size: 14px;
+    }
+}
+
+/* Tabletler */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+}</code></pre>
+                </div>
+
+                <div class="viewport-units">
+                    <h3 class="subtitle"><i class="fas fa-ruler-combined"></i> Viewport Birimleri</h3>
+                    <div class="units-grid">
+                        <div class="unit-card">
+                            <span class="unit">vw</span>
+                            <p>Viewport genişliğinin %1'i</p>
+                        </div>
+                        <div class="unit-card">
+                            <span class="unit">vh</span>
+                            <p>Viewport yüksekliğinin %1'i</p>
+                        </div>
+                        <div class="unit-card">
+                            <span class="unit">vmin</span>
+                            <p>Viewport'un küçük olan boyutu</p>
+                        </div>
+                        <div class="unit-card">
+                            <span class="unit">vmax</span>
+                            <p>Viewport'un büyük olan boyutu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glow">
+        <div class="container">
+            <p><span class="code">CodeMatrix</span> | HTML/CSS Öğrenim Portalı</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-codepen"></i></a>
+                <a href="#"><i class="fab fa-stack-overflow"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
