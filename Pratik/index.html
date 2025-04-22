@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Referans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>HTML & CSS Referans</h1>
+        <nav>
+            <ul>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#layout">Layout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HTML Bölümü -->
+        <section id="html" class="card">
+            <h2>HTML Temelleri</h2>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="tr"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Sayfa Başlığı&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Başlık&lt;/h1&gt;
+    &lt;p&gt;Paragraf&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            <h3>Semantik HTML</h3>
+            <ul>
+                <li><code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code></li>
+                <li><code>&lt;article&gt;</code>, <code>&lt;section&gt;</code></li>
+                <li><code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code></li>
+            </ul>
+        </section>
+
+        <!-- CSS Bölümü -->
+        <section id="css" class="card">
+            <h2>CSS Temelleri</h2>
+            <h3>Seçiciler</h3>
+            <pre><code>/* Element */
+p { color: red; }
+
+/* Class */
+.menu { background: blue; }
+
+/* ID */
+#header { font-size: 24px; }</code></pre>
+
+            <h3>Box Model</h3>
+            <ul>
+                <li><strong>margin</strong>: Dış boşluk</li>
+                <li><strong>padding</strong>: İç boşluk</li>
+                <li><strong>border</strong>: Kenarlık</li>
+            </ul>
+        </section>
+
+        <!-- Layout Bölümü -->
+        <section id="layout" class="card">
+            <h2>CSS Layout</h2>
+            <h3>Flexbox</h3>
+            <pre><code>.container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}</code></pre>
+
+            <h3>Grid</h3>
+            <pre><code>.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}</code></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>HTML & CSS Referans © 2023</p>
+    </footer>
+</body>
+</html>
