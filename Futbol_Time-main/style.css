@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.slider {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+.slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 1s ease-in-out;
+}
+
+.slider {
+    width: 900px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: auto;
+    height: auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide:first-child {
+    opacity: 1;
+}
+
+.slider:hover .slide {
+    opacity: 1;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    95% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.slide:nth-child(1) {
+    animation: slide 12s infinite;
+}
+
+slide:nth-child(2) {
+    animation: slide 12s infinite -4s;
+}
+
+.slide:nth-child(3) {
+    animation: slide 12s infinite -8s;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+.reklam-kapsayici {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.reklam-alani {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.reklam-alani img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+@keyframes reklam-dongusu {
+    0% { opacity: 1;}
+    20% { opacity: 1;}
+    25% { opacity: 0;}
+    95% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+.reklam-alani:nth-child(1) {animation: reklam-dongusu 25s infinite;}
+.reklam-alani:nth-child(2) {animation: reklam-dongusu 25s infinite 5s;}
+.reklam-alani:nth-child(3) {animation: reklam-dongusu 25s infinite 10s;}
+.reklam-alani:nth-child(4) {animation: reklam-dongusu 25s infinite 15s;}
+.reklam-alani:nth-child(5) {animation: reklam-dongusu 25s infinite 20s;}
